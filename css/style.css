@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-  height: 800px;
+  height: 600px;
   max-width: 1440px;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ body {
 
 /* || Left Section */
 .title h1 {
-  font-size: 70px;
+  font-size: 55px;
 }
 
 .title span {
@@ -48,7 +48,7 @@ body {
 
 .restart {
   width: 200px;
-  height: 50px;
+  height: 45px;
   background-color: transparent;
   border: 2px solid #4c6986;
   border-radius: 50px;
@@ -58,7 +58,7 @@ body {
   align-items: center;
   letter-spacing: 0.6px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 20px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -73,8 +73,8 @@ body {
 
 /* || Game Section */
 .game {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
 }
@@ -121,9 +121,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80px;
+  font-size: 55px;
   background-color: white;
-  height: 150px;
+  height: 100px;
 }
 
 .board .board-tile:hover {
@@ -221,36 +221,3 @@ body {
   }
 }
 
-/* Winning Celebration */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay .lottie-celebration {
-  width: 100% !important;
-  height: auto !important;
-  -webkit-transform: rotate(320deg);
-  -ms-transform: rotate(320deg);
-  -moz-transform: rotate(320deg);
-  transform: rotate(320deg);
-}
-
-@media screen and (max-width: 576px) {
-  .overlay {
-    padding-top: 40%;
-  }
-
-  .overlay .lottie-celebration {
-    -webkit-transform: translateX(-30px) rotate(0);
-    -ms-transform: translateX(-30px) rotate(0);
-    -moz-transform: translateX(-30px) rotate(0);
-    transform: translateX(-30px) rotate(0);
-  }
-}

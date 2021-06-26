@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Winning Celebration */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .lottie-celebration {
+  width: 100% !important;
+  height: auto !important;
+  -webkit-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  -moz-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+
+@media screen and (max-width: 576px) {
+  .overlay {
+    padding-top: 40%;
+  }
+
+  .overlay .lottie-celebration {
+    -webkit-transform: translateX(-30px) rotate(0);
+    -ms-transform: translateX(-30px) rotate(0);
+    -moz-transform: translateX(-30px) rotate(0);
+    transform: translateX(-30px) rotate(0);
+  }
+}
