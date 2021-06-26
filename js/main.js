@@ -23,6 +23,7 @@ const onTileClick = (idx) => {
 document.querySelector(".restart").addEventListener("click", () => {
   game = new Game();
   gameView.updateBoard(game);
+  document.querySelector("#result-status").innerText = `?`;
 
   const tiles = document.querySelectorAll('.board-tile');
   tiles.forEach((tile) => {
