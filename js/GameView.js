@@ -15,6 +15,13 @@ export default class GameView {
 
       if (winningCombination && winningCombination.includes(i)) {
         tile.classList.add("tile-winner");
+
+        document.querySelector(".overlay").style.display = "block";
+        document.querySelector(".lottie-celebration").play();
+        setTimeout(() => {
+          document.querySelector(".overlay").style.display = "none";
+          document.querySelector(".lottie-celebration").stop();
+        }, 4200)
       }
     }
   }

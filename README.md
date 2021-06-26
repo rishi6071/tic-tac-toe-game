@@ -1,4 +1,4 @@
-# tic-tac-toe-game
+# Tic-Tac-Toe-game
 Tic-Tac-Toe Game using JavaScript with beautiful &amp; interactive UI Design.
 
 Author - Rishi Soni, 
