@@ -10,8 +10,8 @@ export default class Game {
   }
 
   makeMove(idx) {
-    // if alreay found the winnig combination then stop move
-    if(this.endGame()) return;
+    // if already found the winning combination then stop move
+    if (this.endGame()) return;
 
     // Only update if tile is blank
     if (this.board[idx]) return;
@@ -20,7 +20,13 @@ export default class Game {
     let winningCombination = this.findWinningCombinations();
 
     // If there is no Winning Combination then only provide the turn
-    if (!winningCombination) this.nextTurn();
+    if (!winningCombination) {
+      // if all tiles filled but still didn't get the Winner
+      if (!this.board.includes(null))
+        document.querySelector("#result-status").innerText = `"TIE"`;
+
+      this.nextTurn();
+    }
   }
 
   findWinningCombinations() {
