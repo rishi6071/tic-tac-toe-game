@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@700&family=Pacifico&display=swap");
 
 * {
   padding: 0;
@@ -11,16 +11,16 @@
 
 body {
   font-family: "Merriweather Sans", sans-serif;
-  color: #4c6986;
+  color: var(--color-universal);
+  background: var(--color-bg-body);
 }
 
 .wrapper {
-  height: 600px;
   max-width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
   padding: 0 15px;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .title span {
-  color: #22a157;
+  color: var(--color-title);
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -52,9 +52,9 @@ body {
   width: 200px;
   height: 40px;
   background-color: transparent;
-  border: 2px solid #4c6986;
+  border: 2px solid var(--color-universal);
   border-radius: 50px;
-  color: #4c6986;
+  color: var(--color-universal);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@ body {
 
 .restart:hover {
   color: white;
-  background-color: #4c6986;
+  background-color: var(--color-universal);
   cursor: pointer;
 }
 
@@ -93,20 +93,20 @@ body {
   font-weight: bold;
   letter-spacing: 0.6px;
   text-align: center;
-  color: #9a9a9a;
-  border-bottom: 3.5px solid #eee;
+  color: var(--color-players);
+  border-bottom: 3.5px solid var(--color-border-players);
   padding-bottom: 8px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .header .player-x.active {
-  color: #42bed7;
-  border-color: #42bed7;
+  color: var(--color-playerX-active);
+  border-color: var(--color-playerX-active);
 }
 
 .header .player-o.active {
-  color: #d7bafb;
-  border-color: #d7bafb;
+  color: var(--color-playerO-active);
+  border-color: var(--color-playerO-active);
 }
 
 .board {
@@ -127,44 +127,44 @@ body {
   font-size: 45px;
   background-color: transparent;
   height: 100px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 .board .board-tile:hover {
-  background: #eee;
+  background: var(--color-bg-tile);
   cursor: pointer;
 }
 
 .board .board-tile:not(:nth-child(3n)) {
-  border-right: 2.5px solid rgba(137, 163, 189, 0.5);
+  border-right: 2.5px solid var(--color-border-tile);
 }
 
 .board .board-tile:not(:nth-last-child(-n + 3)) {
-  border-bottom: 2.5px solid rgba(137, 163, 189, 0.5);
+  border-bottom: 2.5px solid var(--color-border-tile);
 }
 
 .tile-x {
-  color: #42bed7;
+  color: var(--color-player-x);
 }
 
 .tile-o {
-  color: #d7bafb;
+  color: var(--color-player-o);
 }
 
 .tile-winner span {
-  color: #23ce6b;
+  color: var(--color-winner);
   font-weight: bold;
 }
 
 .who-winner {
   text-align: center;
   margin-top: 10px;
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   letter-spacing: 1px;
 }
 
 .who-winner span {
-  color: #23ce6b;
+  color: var(--color-winner);
   letter-spacing: 2.5px;
 }
 
@@ -211,6 +211,10 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .wrapper {
+    margin: -30px auto 0 auto;
+  }
+
   .game {
     width: 300px;
     height: 300px;
@@ -245,4 +249,3 @@ body {
     font-size: 23px;
   }
 }
-

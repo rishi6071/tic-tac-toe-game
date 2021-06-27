@@ -16,21 +16,15 @@
 .overlay .lottie-celebration {
   width: 100% !important;
   height: auto !important;
-  -webkit-transform: rotate(320deg);
-  -ms-transform: rotate(320deg);
-  -moz-transform: rotate(320deg);
-  transform: rotate(320deg);
 }
 
 @media screen and (max-width: 576px) {
   .overlay {
-    padding-top: 50%;
+    padding-top: 70%;
   }
 
   .overlay .lottie-celebration {
-    -webkit-transform: translateX(-30px) rotate(0);
-    -ms-transform: translateX(-30px) rotate(0);
-    -moz-transform: translateX(-30px) rotate(0);
-    transform: translateX(-30px) rotate(0);
+    width: 100% !important;
+    height: 100% !important;
   }
 }

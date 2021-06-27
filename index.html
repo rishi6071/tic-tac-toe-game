@@ -17,15 +17,24 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/celebrate.css" />
     <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
 </head>
 
 <body>
     <!-- || Winning Celebration -->
     <div class="overlay" style="display: none;">
-        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_Z71xVw.json" mode="bounce"
-            background="transparent" speed="5" class="lottie-celebration" loop />
-        </lottie-player>
+        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_aEFaHc.json" background="transparent"
+            speed="0.4" class="lottie-celebration" loop style="opacity: 0.7;"></lottie-player>
     </div>
+
+    <header>
+        <div class="theme-container">
+            <label class="switch" for="themeSelect">
+                <input type="checkbox" onclick="toggleTheme()" id="themeSelect" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </header>
 
     <div class="wrapper">
         <!-- || Title Section -->
@@ -79,6 +88,7 @@
     </div>
 
     <!-- || Custom JS -->
+    <script src="./js/theme.js"></script>
     <script src="./js/main.js" type="module" defer></script>
 
     <!-- || Lottie GIFs -->

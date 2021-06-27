@@ -21,7 +21,7 @@ export default class GameView {
         setTimeout(() => {
           document.querySelector(".overlay").style.display = "none";
           document.querySelector(".lottie-celebration").stop();
-        }, 4200)
+        }, 5400)
 
         document.querySelector('#result-status').innerText = `"${game.board[i]}"`;
       }
