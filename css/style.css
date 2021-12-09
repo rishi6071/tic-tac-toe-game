@@ -28,6 +28,10 @@ body {
   width: 50%;
 }
 
+.wrapper .left {
+  text-align: center;
+}
+
 .wrapper .right {
   display: flex;
   justify-content: center;
@@ -35,7 +39,7 @@ body {
 
 /* || Left Section */
 .title h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -49,6 +53,8 @@ body {
 }
 
 .restart {
+  display: block;
+  margin: auto;
   width: 200px;
   height: 40px;
   background-color: transparent;

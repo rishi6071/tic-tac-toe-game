@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 .theme-container {
-    margin: 15px 25px;
-    display: flex;
-    justify-content: flex-end;
+  margin: 3% 5%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .switch {
@@ -56,38 +56,38 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 576px) {
-    .theme-container {
-        margin: 20px 30px;
-    }
+  .theme-container {
+    margin: 20px 30px;
+  }
 }
 
 /* Theme Coloring */
 .theme-light {
-    --color-universal: #4c6986;
-    --color-bg-body: transparent;
-    --color-title: #22a157;
-    --color-players: #9a9a9a;
-    --color-playerX-active: #42bed7;
-    --color-playerO-active: #d7bafb;
-    --color-border-players: #eee;
-    --color-bg-tile: rgba(238, 238, 238, 0.658);
-    --color-border-tile: rgba(155, 185, 214, 0.5);
-    --color-player-x: #42bed7;
-    --color-player-o: #d7bafb;
-    --color-winner: #23ce6b;
+  --color-universal: #4c6986;
+  --color-bg-body: transparent;
+  --color-title: #22a157;
+  --color-players: #9a9a9a;
+  --color-playerX-active: #42bed7;
+  --color-playerO-active: #d7bafb;
+  --color-border-players: #eee;
+  --color-bg-tile: rgba(238, 238, 238, 0.658);
+  --color-border-tile: rgba(155, 185, 214, 0.5);
+  --color-player-x: #42bed7;
+  --color-player-o: #d7bafb;
+  --color-winner: #23ce6b;
 }
 
 .theme-dark {
-    --color-universal: #4f6d8a;
-    --color-bg-body: black;
-    --color-title: #22a157;
-    --color-players: #9a9a9a;
-    --color-playerX-active: #3495a8;
-    --color-playerO-active: #b08fd8;
-    --color-border-players: #eee;
-    --color-bg-tile: rgba(114, 113, 113, 0.233);
-    --color-border-tile: rgba(137, 163, 189, 0.5);
-    --color-player-x: #3495a8;
-    --color-player-o: #b08fd8;
-    --color-winner: #20ad5b;
+  --color-universal: #4f6d8a;
+  --color-bg-body: black;
+  --color-title: #22a157;
+  --color-players: #9a9a9a;
+  --color-playerX-active: #3495a8;
+  --color-playerO-active: #b08fd8;
+  --color-border-players: #eee;
+  --color-bg-tile: rgba(114, 113, 113, 0.233);
+  --color-border-tile: rgba(137, 163, 189, 0.5);
+  --color-player-x: #3495a8;
+  --color-player-o: #b08fd8;
+  --color-winner: #20ad5b;
 }
